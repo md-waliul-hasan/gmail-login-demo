@@ -1,0 +1,182 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*/
+//body
+//{
+//  height: 100%;
+//  width: 100%;
+//}
+
+.mail-border{
+
+  position: absolute;
+  box-sizing: border-box;
+  height: 506px;
+  border: 1px #cccccc solid ;
+  width: 448px;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -224px;
+}
+.bar{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.signin{
+  box-sizing: border-box;
+  color: rgb(32, 33, 36);
+  direction: ltr;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 4px 0px 10px 0px;
+  padding: 0px;
+  border: 0px;
+  line-height: 31.9992px;
+  text-align: center;
+  font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;;
+}
+
+.continue{
+  box-sizing: border-box;
+  direction: ltr;
+  font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+  font-size: 16px;
+  margin: 0px 0px 18px 0px;
+  padding: 0px;
+  border: 0px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+.example-full-width{
+  width: 366px;
+  height: 54px;
+}
+.forgot{
+  position: absolute;
+  top: 248px;
+  left: 40px;
+  Color: rgb(26,115,232);
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 0.25px;
+  font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}
+.create-account{
+  position: absolute;
+  top: 408px;
+  left: 40px;
+  Color: rgb(26,115,232);
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 0.25px;
+  box-sizing: border-box;
+  font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+
+}
+.learn{
+  position: absolute;
+  top: 328px;
+  left: 40px;
+  Color: rgb(26,115,232);
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 0.25px;
+  box-sizing: border-box;
+  font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}
+.not-your{
+  position: absolute;
+  top: 310px;
+  left: 40px;
+  color: rgb(95, 99, 104);
+  font-family: roboto, 'Noto Sans Myanmar UI', arial, sans-serif;
+  font-size: 14px;
+}
+.next2{
+  position: absolute;
+  top: 280px;
+  right: 40px;
+  width: 90px;
+  height: 35px;
+}
+
+.nextt{
+  position: absolute;
+  top: 400px;
+  right: 40px;
+  width: 90px;
+  height: 35px;
+}
+.prev{
+  box-sizing: border-box;
+  color: #3c4043;
+  font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+  margin: 0px 0px 28px 0px;
+  letter-spacing: 0.25px;
+  border-radius: 30px;
+}
+
+.forgot-pass{
+  position: absolute;
+  top: 288px;
+  left: 40px;
+  Color: rgb(26,115,232);
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 0.25px;
+  font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}

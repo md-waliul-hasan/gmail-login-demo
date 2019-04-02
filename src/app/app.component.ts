@@ -24,16 +24,18 @@ export class AppComponent {
 
   goNext() {
     this.isLoaading = true;
+    this.state= 'step3';
     //console.log(this.emailFormControl.value);
     setTimeout(() => {
       this.isLoaading = false;
       this.state = 'step2';
-    }, 2000);
+    }, 1000);
   }
 
   goPrevious() {
     this.state = 'step1' ;
   }
+
 }
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {

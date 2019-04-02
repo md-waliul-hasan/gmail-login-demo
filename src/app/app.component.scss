@@ -180,3 +180,20 @@ table {
   letter-spacing: 0.25px;
   font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
 }
+
+.opacity{
+  opacity: 0.2;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  height: 506px;
+  border: 1px #cccccc solid ;
+  width: 448px;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -224px;
+}

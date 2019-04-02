@@ -14,15 +14,15 @@
 
   <div class="mail">
     <form class="example-form" >
-      <mat-form-field class="example-full-width" appearance="outline" >
+      <mat-form-field class="example-full-width" appearance="outline"  >
         <mat-label>Email or phone</mat-label>
         <input matInput placeholder="Email or phone" [formControl]="emailFormControl"
-               [errorStateMatcher]="matcher">
+               [errorStateMatcher]="matcher" >
         <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
           Please enter a valid email address
         </mat-error>
         <mat-error *ngIf="emailFormControl.hasError('required')">
-          Email is <strong>required</strong>
+          Enter an email or phone number
         </mat-error>
       </mat-form-field>
     </form>
@@ -32,7 +32,7 @@
   <div class="learn">Learn more</div>
   <div class="create-account">Create account</div>
   <div class="next">
-    <button mat-raised-button (click)="goNext()" color="primary" class="nextt">Next</button>
+    <button mat-raised-button [disabled]="emailFormControl.hasError('required')" (click)="goNext()" color="primary" class="nextt" >Next</button>
   </div>
 </div>
   <div *ngIf="state==='step2'" class="mail-border">
@@ -55,7 +55,8 @@
           <mat-label>Password</mat-label>
           <input type="password" matInput placeholder="Password" [formControl]="passwordFormControl"
                  [errorStateMatcher]="matcher">
-          <i class="far fa-eye-slash" matSuffix></i>
+
+          <mat-icon class="material-icons" matSuffix>visibility_off</mat-icon>
 
         </mat-form-field>
 
@@ -68,7 +69,42 @@
     </div>
   </div>
 
+<div class="opacity" *ngIf="state==='step3'">
+  <div  class="mail-border">
+    <mat-progress-bar class="bar" *ngIf="isLoaading===true" mode="indeterminate"></mat-progress-bar>
+    <div class="google">
+      <img src="http://pngimg.com/uploads/google/google_PNG19644.png" width="80" height="30">
+      <p class="signin">
+        <span style="font: 25px"></span> Sign in
+      </p>
+      <p class="continue">to continue to Gmail</p>
 
+    </div>
+
+    <div class="mail">
+      <form class="example-form" >
+        <mat-form-field class="example-full-width" appearance="outline"  >
+          <mat-label>Email or phone</mat-label>
+          <input matInput placeholder="Email or phone" [formControl]="emailFormControl"
+                 [errorStateMatcher]="matcher" >
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Enter an email or phone number
+          </mat-error>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="forgot">Forgot email?</div>
+    <div class="not-your">Not your computer? Use Guest mode to sign in privately.</div>
+    <div class="learn">Learn more</div>
+    <div class="create-account">Create account</div>
+    <div class="next">
+      <button mat-raised-button (click)="goNext()" color="primary" class="nextt" >Next</button>
+    </div>
+  </div>
+</div>
 
 </body>
 
